@@ -379,3 +379,15 @@ class Mail():
         )
 
         return content
+
+    def get_important_messages(self) -> Dict:
+
+        content = self.graph_session.make_request(
+            method='get',
+            endpoint="/me/messages?$filter=importance%20eq%20'high'"
+            )
+
+        return content
+
+        
+
