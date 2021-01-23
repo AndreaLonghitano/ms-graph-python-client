@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+##vscode 
+.vscode/*
+
+##credentials
+credentials.yaml
+
 # C extensions
 *.so
 
